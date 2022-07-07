@@ -1,0 +1,256 @@
+@import url('//fonts.cdnfonts.com/css/revue-bt');
+p
+{
+text-align: justify !important;
+}
+
+.logo img
+{
+height:6rem;
+}
+.main-heading
+{
+padding-top:0.6rem;
+font-size: 3.3rem;
+margin-left:3rem;
+font-family: 'Revue BT', sans-serif !important;
+font-weight:normal !important;
+}
+.slider-area .hero-caption span
+{
+margin-top:1rem;
+}
+.header-btn2
+{
+margin-top:1px;
+}
+
+.slider-area .hero-caption h1
+{
+font-size:3rem;
+}
+.slider-area .single-sliders .hero-caption
+{
+padding: 1px;
+}
+.slider-area .single-sliders  img
+{
+display: none;
+}
+
+.header-right-btn
+{
+margin-top: 1PX;
+}
+.categories-area
+{
+margin-top:1px;
+}
+.slider-bg1 {
+  background-image: url(../img/hero/hero.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover
+}
+
+@media (max-width:909px) {
+.logo img
+{
+height:5rem;
+}
+.slider-area .single-sliders .hero-caption
+{
+width: 100%;
+margin-top: 0em !important;
+}
+.slider-area .hero-caption span
+{
+display: none;
+}
+.slider-area .single-sliders
+{
+min-height: 4rem;
+}
+.slider-area .single-sliders .hero-caption h1
+{
+font-size:1.2rem;
+margin-top: 23rem;
+}
+.header-btn2
+{
+margin-top:1em !important;
+}
+.header-right-btn
+{
+transform: tra;
+}
+.categories-area
+{
+margin-top:17em;
+}
+.slider-bg1 {
+  background-image:none;
+}
+
+.slider-bg2 {
+display: none;
+}
+.slider-area .single-sliders img
+{
+display: block;
+height:16rem;
+width:16rem;
+transform:translateY(21rem);
+margin:auto;
+margin-top:2rem;
+border-radius: 50%;
+}
+
+}
+
+
+.categories-area .single-cat span
+{
+color: #192839;
+font-size: 22px;
+font-weight: 700;
+}
+.categories-area .single-cat .cat-cap
+{
+text-align: justify;
+}
+.about-area1 .about-img
+{
+text-align: center !important;
+}
+.about-area1 h5
+{
+color: #ff6d6d;
+font-weight: 600;
+}
+
+.form input,
+.form textarea
+{
+width: 100%;
+border-radius: 1.3rem;
+border: 1px solid #333;
+font-size:0.9rem !important;
+resize: none;
+padding:0.7rem;
+}
+.form select
+{
+width: 100%;
+border-radius: 1.3rem;
+border: 1px solid #333;
+font-size:0.9rem !important;
+resize: none;
+padding:0.7rem;
+}
+
+.form-btn .btn
+{
+padding: 1.5rem 0;
+border-radius:1.5rem;
+background: #ff4495;
+background: -moz-linear-gradient(top,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+background: -webkit-linear-gradient(top,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+background: linear-gradient(to bottom,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+border: none;
+}
+
+.form-btn .btn:hover    
+{
+background: #ff6d6d;
+background: -moz-linear-gradient(top,#ff6d6d 0%,#ff4495 100%,#7db9e8 100%);
+background: -webkit-linear-gradient(top,#ff6d6d 0%,#ff4495 100%,#7db9e8 100%);
+background: linear-gradient(to bottom,#ff6d6d 0%,#ff4495 100%,#7db9e8 100%);
+border: none;
+}
+
+.emargency-care
+{
+margin-top:-3rem;
+}
+
+.emargency-care .emargency-cap
+{
+padding-right:7rem;
+margin-top:-3rem;
+}
+
+@media (max-width:909px) {
+.emargency-care
+{
+margin-top:0;
+
+}
+
+.emargency-care .emargency-cap
+{
+margin-top: 0;
+padding: 1rem 0;
+}
+}
+
+.footer-area
+{
+text-align: center;
+}
+.footer-area img
+{
+height:6rem;
+}
+
+.footer-bottom-area
+{
+background: #ff4495;
+background: -moz-linear-gradient(top,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+background: -webkit-linear-gradient(top,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+background: linear-gradient(to bottom,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+}
+
+.footer-wrapper .footer-area ul li
+{
+font-size:0.9rem;
+margin-top:0.6rem;
+}
+
+.footer-wrapper .footer-area ul li i
+{
+color: #ff4495;
+color: -moz-linear-gradient(top,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+color: -webkit-linear-gradient(top,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+color: linear-gradient(to bottom,#ff4495 0%,#ff6d6d 100%,#7db9e8 100%);
+}
+
+.footer-wrapper .footer-area h5
+{
+font-weight: 600;
+position: relative;
+/* color: #ff4495; */
+}
+
+.footer-wrapper .footer-area h5::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 1.7px;
+	background-color: #ff4495;
+  /* transform: translate3d(-100%, 0, 0); */
+  transition: transform 500ms;
+  animation: slide-me 2s infinite;
+}
+
+@keyframes slide-me {
+    0%
+    {
+    width: 0%;
+    }
+    100%
+    {
+        width: 32%;
+    }
+}
