@@ -50,6 +50,8 @@ header("Location:index.php");
     <script src="global_assets/js/demo_pages/picker_date.js"></script>
     <!-- /theme JS files -->
 
+    <link href="../assets/css/style.css" rel="stylesheet"></link>
+
 
 
 </head>
@@ -114,6 +116,22 @@ header("Location:index.php");
                                 <i class="icon-home4"></i>
                                 <span>
                                     Dashboard
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pending.php" class="nav-link active">
+                                <i class="icon-pencil"></i>
+                                <span>
+                                    Pending Grievances
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="resolve.php" class="nav-link active">
+                                <i class="icon-pencil"></i>
+                                <span>
+                                    Resolved Grievances
                                 </span>
                             </a>
                         </li>

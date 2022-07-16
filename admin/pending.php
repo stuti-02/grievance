@@ -1,6 +1,6 @@
 <?php
 include("connection.php");
-$query="select * from tbl_grievance order by id desc";
+$query="select * from tbl_grievance where status='Pending' order by id desc";
 $res=mysqli_query($dbCon,$query);
 ?>
 
@@ -10,8 +10,8 @@ $res=mysqli_query($dbCon,$query);
     <div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
         <div class="d-flex">
             <div class="breadcrumb">
-                <a href="#" class="breadcrumb-item"><i class="icon-copy"></i> Manage Grievances</a>
-                <span class="breadcrumb-item active">View Grievances</span>
+                <a href="#" class="breadcrumb-item"><i class="icon-copy"></i> Pending Grievances</a>
+                <span class="breadcrumb-item active">Pending Grievances</span>
             </div>
             <a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
         </div>
@@ -34,7 +34,7 @@ $res=mysqli_query($dbCon,$query);
         </div>
         <div class="card-body">
         </div>
-        <table class="table datatable-button-init-basic datatable-reorder">
+        <table class="table table-bordered datatable datatable-button-init-basic datatable-reorder">
             <thead>
                 <tr>
                     <th>S.No.</th>
@@ -70,25 +70,7 @@ $res=mysqli_query($dbCon,$query);
                     <td><?php echo $row['subject'];?></td>
                     <td style="width:400px;min-width:400px;"><?php echo $row['message'];?></td>
                     <td style="width:120px;min-width:120px;"><?php echo $row['date'];?></td>
-                    <td><?php 
-                    if($row['status']=='Pending')
-                    {
-                    ?>
-                        <button class="btn border-danger text-danger bg-white font-bold">Pending</button>
-                    <?php
-                    }
-                    elseif($row['status']=='Resolved')
-                    {
-                    ?>
-                        <button class="btn border-success text-success bg-white font-bold">Resolved</button>
-                    <?php
-                    }
-                    else
-                    {
-                   
-                    }
-                    ?>
-                    </td>
+                    <td><a href="pending-code.php?id=<?php echo $row['id'];?>"><button class="btn border-danger text-danger bg-white font-bold">Pending</button></a></td>
                     <td><a href="tdel.php?id=<?php echo $row['id'];?>">Delete</a></td>
                 </tr>
                 <?php
@@ -124,8 +106,35 @@ jQuery(document).ready(function() {
 </script>
 
 
+<?php
+    if (isset($_REQUEST['msg'])) {
+      if ($_REQUEST['msg'] == '1') {
+    ?>
 
+      <script>
+        Swal.fire({
+          icon: 'error',
+          title: 'Success...',
+          text: 'Issue Resolved!'
+        })
+      </script>
 
+    <?php
+    } else {
+    ?>
+
+      <script>
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Something went wrong!'
+        })
+      </script>
+    <?php
+      }
+    }
+    ?>
+    
 
 
 

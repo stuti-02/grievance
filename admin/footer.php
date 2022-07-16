@@ -11,7 +11,7 @@
                 </div>
                 <div class="navbar-collapse collapse" id="navbar-footer">
                     <span class="navbar-text">
-                        Designed & Developed By | <a target="_blank" href="http://www.softproindia.in" style="">Softpro India Computer Technologies (P) Ltd.</a>
+                        Designed & Developed By | <a target="_blank" href="http://www.softproindia.in">Softpro India Computer Technologies (P) Ltd.</a>
                     </span>
                 </div>
             </div>
@@ -21,5 +21,7 @@
     </div>
     <!-- /page content -->
 </body>
-</html>
+
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>

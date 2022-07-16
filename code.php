@@ -13,7 +13,7 @@ $message=$_POST['message'];
 
 include "admin/connection.php";
 
- $query= "insert into tbl_grievance (name,enroll_id,mobile,email,batch,college,complain_against,subject,message,date) values ('$name','$enroll','$mobile','$email','$batch','$college','$complain_against','$subject','$message',curdate())";
+ $query= "insert into tbl_grievance (name,enroll_id,mobile,email,batch,college,complain_against,subject,message,date,status) values ('$name','$enroll','$mobile','$email','$batch','$college','$complain_against','$subject','$message',curdate(),'Pending')";
 
 
 $res=mysqli_query($dbCon,$query);

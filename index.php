@@ -242,7 +242,7 @@
       
               <div class="row mt-0 mt-sm-4">
                 <div class="col-sm-6 mt-3 mt-sm-0">
-                  <input type="text" name="mobile" placeholder="Enter Your Contact No." required maxlength="12" minlength="10"/>
+                  <input type="text" name="mobile" placeholder="Enter Your Contact No." required maxlength="10" minlength="10"/>
                 </div>
                 <div class="col-sm-6 mt-3 mt-sm-0">
                   <input type="email" name="email" placeholder="Enter Your Email" required/>
@@ -332,10 +332,10 @@
                       </div>
                       <ul class="footer-social">
                         <li>
-                          <a href="#"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.instagram.com/softproindia/" target="_blank"><i class="fab fa-instagram"></i></a>
                         </li>
                         <li>
-                          <a href="https://bit.ly/sai4ull"
+                          <a href="https://www.facebook.com/Softprogroupofcompanies/" target="_blank"
                             ><i class="fab fa-facebook"></i
                           ></a>
                         </li>
@@ -343,7 +343,7 @@
                           <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li>
-                          <a href="#"><i class="fab fa-youtube"></i></a>
+                          <a href="https://www.youtube.com/c/SoftproIndia" target="_blank"><i class="fab fa-youtube"></i></a>
                         </li>
                       </ul>
                     </div>
